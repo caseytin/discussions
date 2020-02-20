@@ -1,0 +1,42 @@
+body {
+    background-size: cover;
+    background-image: url('../images/background.jpeg');
+}
+
+h1 {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+img {
+    width: 125px; 
+    margin-bottom: 10px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div {
+    padding: 25px; 
+    margin:5px;
+ }
+ 
+
+div:nth-child(odd) {
+    border: solid black 1px;
+}
+
+/* mobile styling */
+@media screen and (max-width: 800px) { 
+    section {
+        grid-template-columns: auto auto;
+    }
+    div:nth-child(odd) {
+        border: none;
+    }
+}
